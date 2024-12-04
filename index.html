@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MY CAKE SHOP</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+@import url{'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css'}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Rubik',sans-serif;
+  letter-spacing: 5px;
+}
+</style>
+</head>
+<body>
+
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:5px;">
+    <a href="#home" class="w3-bar-item w3-button">LITTLE SWEET🍰</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#menu" class="w3-bar-item w3-button">Menu</a>
+      <a href="#login" class="w3-bar-item w3-button">Login</a>
+  
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+  <img class="w3-image" src="Downloads/littlesweet/CAKE1.jpg" alt="CAKE" width="1600" height="800">
+  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+    <h1 class="w3-xxlarge">MY CAKE SHOP</h1>
+  </div>
+</header>
+
+<!--POP OUT WINDOW-->
+<link rel="stylesheet" href="popoutwindow.css">
+<div class="popup">
+        <button id="close">&times;</button>
+        <h2>📌DEAR CUSTOMER📌</h2>
+        <p>
+           We will open from 9a.m. until 9p.m. everyday.Thanks for your visit,hope you have a nice day.
+        </p>
+        <a>Let's Go</a>
+    </div>
+    <!--Script-->
+    <script type="text/javascript">
+    window.addEventListener("load", function(){
+        setTimeout(
+            function open(event){
+                document.querySelector(".popup").style.display = "block";
+            },
+            1000
+        )
+    });
+    document.querySelector("#close").addEventListener("click", function(){
+        document.querySelector(".popup").style.display = "none";
+    });
+    </script>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="Downloads/littlesweet/CAKE2.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">About Cake Shop</h1><br>
+      <h5 class="w3-center">Sweet&Creamy Cake</h5>
+      <p class="w3-large">Cake shops are a haven for fose with a sweet tooth, where every visit is a delightful journey into the world of confectionery. These establishments have been enchanting our taste buds for generations with their artful creations, making celebrations memorable and ordinary days special.Many people will delve into the enchanting universe of cake shops, their history, the evolution of cake-making, and the diverse array of cakes that continue to tantalize our senses.<span class="w3-tag w3-light-grey">seasonal</span> ingredients.</p>
+      <p class="w3-large w3-text-grey w3-hide-medium">케이크 가게는 단 것을 좋아하는 사람들의 안식처이며, 방문할 때마다 제과의 세계로의 즐거운 여행이 됩니다. 이 식당들은 그들의 예술적인 창조물로 여러 세대 동안 우리의 미뢰를 매혹시켜 축하 행사를 기억에 남고 평범한 날을 특별하게 만들어 왔습니다. 이 기사에서, 많은 사람들이 케이크 가게의 매혹적인 세계, 그들의 역사, 케이크 만들기의 진화, 그리고 계속해서 우리의 감각을 자극하는 다양한 케이크를 탐구할 것이다.</p>
+    </div>
+  </div>
+  
+<link rel="stylesheet" href="why_choose_us.css"
+  <div class="feat bg-gray pt-5 pb-5">
+    <div class="container">
+      <div class="row">
+        <div class="section-head col-sm-12">
+          <h4><span>Why Choose</span> Us?</h4>
+          <p>When you choose us, you'll feel the benefit of 10 years' experience of Web Development. Because we know the digital world and we know that how to handle it. With working knowledge of online, SEO and social media.</p>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="item"> <span class="icon feature_box_col_one"><i class="fa fa-globe"></i></span>
+            <h6>Profesional baker</h6>
+            <p>We hire profesional baker from all around the world.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="item"> <span class="icon feature_box_col_two"><i class="fa fa-cake"></i></span>
+            <h6>Creative Design</h6>
+            <p>We are always bake delicious and yummy cake for our customers.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="item"> <span class="icon feature_box_col_three"><i class="fa fa-hourglass-half"></i></span>
+            <h6>24 x 7 User Support</h6>
+            <p>If our customer has any problem and any query we are always happy to help then.</p>
+          </div>
+        </div>
+    
+        <div class="col-lg-4 col-sm-6">
+          <div class="item"> <span class="icon feature_box_col_six"><i class="fa fa-camera"></i></span>
+            <h6>Affordable cost</h6>
+            <p>Love is a special word, and I use it only when I mean it. You say the word too much and it becomes cheap.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Menu Section -->
+  <div class="w3-row w3-padding-64" id="menu">
+    <div class="w3-col l6 w3-padding-large">
+    </div>
+  </div>
+  <!-- Bootstrap5 css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+ <!-- external css -->
+  <link href="style.css" rel="stylesheet">
+
+  <div class="container py-5">
+   <h1 class="text-align-center">Popular dishes</h1>
+
+   
+   <div class="row row-cols-1 row-cols-md-3 g-4 py-5">
+
+    <div class="col">
+    <div class="card">
+        <img src="Downloads/littlesweet/apple cake.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">APPLE CAKE</h5>
+            <p class="card-text">Apple cakes are cakes in which apples feature as a main flavour and ingredient.</p>
+        </div>
+        <div class="mb-5 d-flex justify-content-around">
+            <h3>RM25</h3>
+            <button class="btn btn-primary">Buy Now</button>
+        </div>
+    </div>
+</div>
+
+<div class="col">
+    <div class="card">
+        <img src="Downloads/littlesweet/tiramisu cake.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">TIRAMISU CAKE</h5>
+            <p class="card-text">Tiramisu cake is a type of delicious and yummy sponge cake.</p>
+        </div>
+        <div class="mb-5 d-flex justify-content-around">
+            <h3>RM25</h3>
+            <button class="btn btn-primary">Buy Now</button>
+        </div>
+    </div>
+</div>
+
+<div class="col">
+    <div class="card">
+        <img src="Downloads/littlesweet/red_velvet_cake.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">RED VELVET CAKE</h5>
+            <p class="card-text">A red, crimson, layer cake, layered with ermine icing.</p>
+        </div>
+        <div class="mb-5 d-flex justify-content-around">
+            <h3>RM20</h3>
+            <button class="btn btn-primary">Buy Now</button>
+        </div>
+    </div>
+</div>
+
+<div class="col">
+    <div class="card">
+        <img src="Downloads/littlesweet/carrot_cake.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">CARROT CAKE</h5>
+            <p class="card-text">Carrot cake is a cake that contains carrots mixed into the batter.</p>
+        </div>
+        <div class="mb-5 d-flex justify-content-around">
+            <h3>RM20</h3>
+            <button class="btn btn-primary">Buy Now</button>
+        </div>
+    </div>
+</div>
+
+<div class="col">
+    <div class="card">
+        <img src="Downloads/littlesweet/sponge_cake.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">SPONGE CAKE</h5>
+            <p class="card-text">This is a foam-style cake that has no artificial leaveners</p>
+        </div>
+        <div class="mb-5 d-flex justify-content-around">
+            <h3>RM20</h3>
+            <button class="btn btn-primary">Buy Now</button>
+        </div>
+    </div>
+</div>
+
+<div class="col">
+    <div class="card">
+        <img src="Downloads/littlesweet/coffeecake.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">COFFEE CAKE</h5>
+            <p class="card-text">Single layer cake with a sweet, cinnamon-infused flavor.</p>
+        </div>
+        <div class="mb-5 d-flex justify-content-around">
+            <h3>RM25</h3>
+            <button class="btn btn-primary">Buy Now</button>
+        </div>
+    </div>
+</div>
+
+<div class="col">
+    <div class="card">
+        <img src="Downloads/littlesweet/blackforestcake.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">BLACK FOREST CAKE</h5>
+            <p class="card-text">The cake is decorated with piped, whipped cream, maraschino cherries, and chocolate shavings.</p>
+        </div>
+        <div class="mb-5 d-flex justify-content-around">
+            <h3>RM20</h3>
+            <button class="btn btn-primary">Buy Now</button>
+        </div>
+    </div>
+</div>
+
+<div class="col">
+    <div class="card">
+        <img src="Downloads/littlesweet/genoisespongecake.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">GENOISE SPONGE CAKE</h5>
+            <p class="card-text">Enriched with butter and egg yolk, as well as flavored with a brush of flavored syrup.</p>
+        </div>
+        <div class="mb-5 d-flex justify-content-around">
+            <h3>RM25</h3>
+            <button class="btn btn-primary">Buy Now</button>
+        </div>
+    </div>
+</div>
+
+<div class="col">
+    <div class="card">
+        <img src="Downloads/littlesweet/johnnycakes.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">JOHNNY CAKE</h5>
+            <p class="card-text">Johnny cake centuries old recipe is made from a simple mix of cornmeal, water, and salt and fried on a hot griddle. </p>
+        </div>
+        <div class="mb-5 d-flex justify-content-around">
+            <h3>RM20</h3>
+            <button class="btn btn-primary">Buy Now</button>
+        </div>
+    </div>
+</div>
+
+</div>
+</div>
+
+<div class="container py-5">
+   <h1 class="text-align-center">Popular beverages</h1>
+
+   <div class="row row-cols-1 row-cols-md-3 g-4 py-5">
+
+    <div class="col">
+    <div class="card">
+        <img src="Downloads/littlesweet/coffee2.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">COFFEE</h5>
+            <p class="card-text">A pleasant aroma with a mixed flavor of sweetness, acidity, and bitterness.</p>
+        </div>
+        <div class="mb-5 d-flex justify-content-around">
+            <h3>RM4</h3>
+            <button class="btn btn-primary">Buy Now</button>
+        </div>
+    </div>
+</div>
+
+    <div class="col">
+    <div class="card">
+        <img src="Downloads/littlesweet/latte.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">LATTE</h5>
+            <p class="card-text">A pleasant aroma with a mixed flavor of sweetness, acidity, and bitterness.</p>
+        </div>
+        <div class="mb-5 d-flex justify-content-around">
+            <h3>RM4</h3>
+            <button class="btn btn-primary">Buy Now</button>
+        </div>
+    </div>
+</div>
+
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+crossorigin="anonymous"></script>
+
+ <!-- Bootstrap 5 js -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  <!-- Order Section -->
+  <div class="w3-row w3-padding-64" id="order">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+    </div>
+  </div>
+    <h1>Order Now</h1>
+    <p>We offer delivery service.Send us a message and let us know what type of cake and beverage you need!Do not hesitate to contact us.</p>
+    <p class="w3-text-blue-grey w3-large"><b>OUR SHOP,No.18,Jalan Mutiara Emas,Taman Mount Austin,21000,Ipoh Perak</b></p>
+    <p>You can also contact us by phone 00553123-2323 or email littecake@deliciouscake.com</p>
+    <form action="/action_page.php" target="_blank">
+      <form action="/action_page.php">
+      <label for="cars">Choose your cake/beverage:</label>
+      <select name="cake/beverage" id="cake/beverage">
+      <option value="Apple cake">Apple cake</option>
+      <option value="Tiramisu cake">Tiramisu cake</option>
+      <option value="Red velvet cake">Red velvet cake</option>
+      <option value="Carrot cake">Carrot cake</option>
+      <option value="Sponge cake">Sponge cake</option>
+      <option value="Coffee cake">Coffee cake</option>
+      <option value="Black forest cake">Black forest cake</option>
+      <option value="Genoise sponge cake">Apple cake</option>
+      <option value="Johnny cake">Johnny cake</option>
+      <option value="Coffee">Coffee</option>
+      <option value="Latte">Latte</option>
+      </option>" required name="Cake/Beverage Name">>
+      </select>
+      </form>
+      <p><input class="w3-input w3-padding-16" type="number" placeholder="Quantity" required name="Quantity"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Address" required name="Address"></p>
+      <p><input class="w3-input w3-padding-16" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <a href="thankyoupage.html">Order</a>
+    </form>
+    <div class="w3-row w3-padding-64" id="Login">
+    <div class="w3-col 25 w3-padding-large">
+    </div>
+</div>
+    </div>
+  </div>
+  
+  <!-- Customer Review Section -->
+  <link rel="stylesheet" href="customer_review.css">
+  <section id="testimonials">
+    <div class="testimonial-heading">
+        <span>Comments</span>
+        <h4>Customers Says</h4>
+    </div>
+    <div class="testimonial-box-container">
+        <div class="testimonial-box">
+            <div class="box-top">
+                <div class="profile">
+                    <div class="profile-img">
+                        <img src="Downloads/littlesweet/profile_pic1.jpg" />
+                    </div>
+                    <div class="name-user">
+                        <strong>Mei Ling</strong>
+                        <span>@mmeillingg1</span>
+                    </div>
+                </div>
+                <div class="reviews">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+            <div class="client-comment">
+                <p>I recently dined at here with my family and was thoroughly impressed by both the exquisite cuisine and the impeccable service. The menu showcased a variety of innovative dishes, blending bold flavors and beautiful presentation.</p>
+            </div>
+        </div>
+        <div class="testimonial-box">
+            <div class="box-top">
+                <div class="profile">
+                    <div class="profile-img">
+                        <img src="Downloads/littlesweet/profile_pic2.jpg" />
+                    </div>
+                    <div class="name-user">
+                        <strong>Joey</strong>
+                        <span>@imjoeyyyy_</span>
+                    </div>
+                </div>
+                <div class="reviews">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+            <div class="client-comment">
+                <p>The attentive and knowledgeable staff ensured that our meal was a memorable one, providing excellent recommendations and ensuring our satisfaction. I can't recommend enough for a fantastic dining experience.</p>
+            </div>
+        </div>
+        <div class="testimonial-box">
+            <div class="box-top">
+                <div class="profile">
+                    <div class="profile-img">
+                        <img src="Downloads/littlesweet/profile_pic3.jpg" />
+                    </div>
+                    <div class="name-user">
+                        <strong>Jack</strong>
+                        <span>@jack2794</span>
+                    </div>
+                </div>
+                <div class="reviews">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+            <div class="client-comment">
+                <p>The staff was great. The receptionists were very helpful and answered all our questions. The room was clean and bright, and the room service was always on time. Will be coming back! Thank you so much.</p>
+            </div>
+        </div>
+        <div class="testimonial-box">
+            <div class="box-top">
+                <div class="profile">
+                    <div class="profile-img">
+                        <img src="Downloads/littlesweet/profile_pic4.jpg" />
+                    </div>
+                    <div class="name-user">
+                        <strong>Olivia</strong>
+                        <span>@notoliviaa4</span>
+                    </div>
+                </div>
+                <div class="reviews">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+            <div class="client-comment">
+                <p>My husband and I went for dinner in restaurant X and really enjoyed the atmosphere. The food was fresh and delicious, and the best part was that the chef sent us a dessert they had created that day. We were delighted.</p>
+            </div>
+        </div>
+    </div>
+  </section>
+  </div>
+   
+  <!--Login Section -->
+  <div class="w3-row w3-padding-64" id="login">
+    <div class="w3-col m6 w3-padding-large">
+      <h1>LOGIN</h1>
+ <a href="login.html">CLICK HERE TO LOGIN</a>
+<div class="w3-row w3-padding-64" id="Login">
+    <div class="w3-col 25 w3-padding-large">
+    </div>
+</div>
+    </div>
+  </div>
+ 
+<footer>
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <div class="footerContainer">
+        <div class="socialIcons">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-google-plus"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <div class="footerNav">
+            <ul><li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+            </ul>
+        </div>
+        
+    </div>
+    <div class="footerBottom">
+        <p>Copyright &copy;2023; Designed by <span class="designer">Noman</span></p>
+    </div>
+</footer>
+
+<!-- End page content -->
+</div>
+
+
+</body>
+</html>

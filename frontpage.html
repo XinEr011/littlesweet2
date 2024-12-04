@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Our Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Welcome Page Content -->
+    <div class="welcome-container">
+        <h1>LITTLE SWEET🍰</h1>
+        <h2>Welcome to Our Website</h2>
+        <p>We're glad to have you here. Enjoy your visit!</p>
+        <p class="loading">Redirecting you to the site after 5 second...</p>
+    </div>
+
+    <script>
+        // Redirect after 5 seconds
+        setTimeout(function() {
+            window.location.href = "index.html"; // @import url{'http://127.0.0.1:3000/c:/Users/User/Documents/index.html'}
+        }, 5000); // 5000 milliseconds = 5 seconds
+    </script>
+</body>
+</html>
+
+<style>
+    /* Basic reset for margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Full page styling */
+body, html {
+    height: 100%;
+    display: flex;
+    background-color: #f0d4e7;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Container for the welcome message */
+.welcome-container {
+    text-align: center;
+    background-color: #caa5bf;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Heading Style */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Paragraph Styling */
+p {
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Loading message styling */
+.loading {
+    font-size: 1em;
+    color: #333;
+    margin-top: 20px;
+    font-style: italic;
+}
+
+</style>
